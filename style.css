@@ -626,6 +626,7 @@ p:last-child{
   color: #828282;
   font-weight: 600;
   text-align: right;
+  flex-shrink: 0;
 }
 .input-xl-outer {
   flex-grow: 1;
@@ -637,12 +638,27 @@ p:last-child{
   width: 100%;
   border: 1px solid #8F8F8F;
   border-radius: 2px;
+  background: transparent;
 }
 .contact__form__bottom {
   padding: 35px 0 0 91px;
 }
 .contact__form__bottom .submit {
 
+}
+
+.contact__form__app {
+  width: 580px;
+}
+.contact__form__app .xl-label {
+  width: 250px;
+}
+.contact__form__app .contact__form__bottom {
+  padding-top: 0;
+  padding-left: 0;
+}
+.contact__form__app .contact__form__bottom .submit {
+  width: 100%;
 }
 /* ---contact-section---end */
 
@@ -840,7 +856,8 @@ p:last-child{
 
 /* ---page-hero-section--- */
 .page-hero-section {
-
+  background-size: cover !important;
+  background-position: center center !important;
 }
 .page-hero-section__inner {
 
@@ -854,6 +871,10 @@ p:last-child{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.page-hero__content h3 {
+  font-size: 28px;
+  letter-spacing: 0.5px;
 }
 /* ---page-hero-section---end */
 
@@ -877,3 +898,204 @@ p:last-child{
   padding: 30px;
 }
 /* ---about-section---end */
+
+
+/* ---show-section--- */
+.show-section {
+  padding: 65px 0;
+}
+.show-section__inner {
+
+}
+
+.show__filter__title {
+  margin: 0 0 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.show__filter__left {
+
+}
+.filter__a-wrap {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+}
+.filter__a {
+  font-size: 16px;
+  gap: 6px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+.filter__a:hover {
+  opacity: 0.7;
+}
+.filter__a .icon {
+  width: 22px;
+  display: flex;
+}
+
+.show__filter__right {
+
+}
+.select-x {
+  min-width: 200px;
+  padding: 8px 10px;
+  /* min-height: 30px; */
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #D4D5D5;
+}
+.select-x.nice-select::after {
+  right: 10px;
+  border-width: 1px;
+}
+
+.pagination {
+  margin: 45px 0 0;
+  display: flex;
+  justify-content: center;
+}
+.pagination ul {
+  display: flex;
+}
+.pagination ul li {
+
+}
+.pagination ul li a {
+  font-size: 14px;
+  height: 32px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #707070;
+  border: 1px solid #D4D5D5;
+  border-left: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.pagination ul li:first-child {
+  border-left: 1px solid #D4D5D5;
+}
+.pagination ul li a.i-a {
+  font-size: 11px;
+}
+.pagination ul li a:not(.disabled):hover {
+  color: var(--theme__color1);
+  background: #D4D5D5;
+}
+.pagination ul li a.active {
+  color: var(--theme__color1);
+  background: #D4D5D5;
+}
+.pagination ul li a.disabled {
+  color: #7070706e;
+}
+/* ---show-section---end */
+
+
+/* ---appointment-section--- */
+.appointment-section {
+  padding: 65px  0;
+}
+.appointment__title {
+  margin: 0 0 40px;
+}
+.st-logo {
+  margin: 0 0 25px;
+  width: 240px;
+}
+.st-logo img {
+
+}
+.ttl-nav {
+  gap: 40px;
+  display: flex;
+  align-items: center;
+}
+.ttl-nav-a {
+  font-size: 16px;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  transform: 0.3s;
+}
+.ttl-nav-a:hover {
+  opacity: 0.7;
+}
+.ttl-nav-a .icon {
+  width: 16px;
+  display: flex;
+}
+
+.appointment__form-row {
+  padding: 55px 0;
+  background: url('images/map.png') no-repeat center center/cover;
+}
+.appointment__form-row__inner {
+  display: flex;
+  justify-content: flex-end;
+}
+/* ---appointment-section---end */
+
+
+/* --details-section--- */
+.details-section {
+  padding: 20px 0;
+}
+.details-section__inner {
+
+}
+
+.details__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.details__row__content {
+  width: 42%;
+}
+.text-breadcrumb {
+  margin: 0 0 45px;
+}
+.text-breadcrumb ul {
+  font-size: 17px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+.text-breadcrumb a {
+  color: #6e6e6e;
+}
+.s-number {
+  margin: 0 0 50px;
+  font-size: 17px;
+  color: #6e6e6e;
+}
+.details__row__content p {
+  font-size: 17px;
+  color: #6e6e6e;
+}
+.details__row__content__bottom-buttons {
+  padding: 45px 0 0;
+  display: flex;
+  gap: 10px;
+}
+.details__row__content__bottom-buttons .button {
+  min-height: 45px;
+  width: 50%;
+}
+
+.details__row__image {
+  width: 50%;
+}
+.details__row__image .img {
+  width: 100%;
+}
+/* --details-section---end */

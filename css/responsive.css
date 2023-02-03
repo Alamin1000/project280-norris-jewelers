@@ -242,6 +242,91 @@
     .diamond__tc .bottom-button {
         margin-top: 20px;
     }
+
+
+    .filter__a {
+        font-size: 14px;
+        gap: 4px;
+    }
+    .filter__a .icon {
+        width: 19px;
+    }
+    .pagination ul li a {
+        font-size: 13px;
+        height: 28px;
+        width: 50px;
+    }
+    .pagination ul li a.i-a {
+        font-size: 9px;
+    }
+    .select-x {
+        min-width: 180px;
+        padding: 7px 10px;
+        border-radius: 3px;
+        font-size: 13px;
+    }
+    .show-section {
+        padding: 50px 0;
+    }
+    .show__filter__title {
+        margin: 0 0 45px;
+    }
+    .pagination {
+        margin: 35px 0 0;
+    }
+    .filter__a-wrap {
+        gap: 20px;
+    }
+
+    .page-hero__content h3 {
+        font-size: 19px;
+        letter-spacing: 0.4px;
+    }
+    .st-logo {
+        margin: 0 0 20px;
+        width: 200px;
+    }
+    .ttl-nav {
+        gap: 25px;
+    }
+    .contact__form__app {
+        width: 580px;
+    }
+    .contact__form__app .xl-label {
+        width: 210px;
+    }
+    .contact__form__app {
+        width: 520px;
+    }
+
+
+    .text-breadcrumb ul {
+        font-size: 16px;
+    }
+    .text-breadcrumb {
+        margin: 0 0 25px;
+    }
+    .s-number {
+        margin: 0 0 30px;
+        font-size: 16px;
+    }
+    .details__row__content p {
+        font-size: 16px;
+    }
+    .details__row__content__bottom-buttons .button {
+        min-height: 40px;
+    }
+    .details__row__content__bottom-buttons {
+        padding: 20px 0 0;
+    }
+    .details__row__content {
+        width: 44%;
+    }
+    .details__row__image {
+        width: 47%;
+    }
+
+
 }
 
 
@@ -339,6 +424,34 @@
         margin: 20px 0 0;
         gap: 5px;
     }
+
+    .show__filter__title .pagination {
+        display: none;
+    }
+
+    .ttl-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .appointment-section {
+        padding: 45px 0;
+    }
+
+
+    .details__row {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .details__row__content {
+        width: 100%;
+    }
+    .details__row__image {
+        padding: 0 20px;
+        max-width: 500px;
+        margin: 0 auto;
+        width: 100%;
+        order: -1;
+    }
 }
 
 
@@ -419,11 +532,36 @@
     }
 
 
+
+    .show__filter__title {
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .show__filter__title .pagination {
+        display: flex;
+    }
+    .show__filter__title {
+        margin: 0 0 30px;
+    }
+
+
+    .ttl-nav-a {
+        font-size: 15px;
+    }
+    .contact__form__app .xl-label {
+        width: 120px;
+        font-size: 14px;
+    }
+
 }
 
 
 @media (max-width: 575px) {
- 
+    .pagination ul li a {
+        width: 40px;
+    }
 }
 
 

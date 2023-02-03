@@ -26,6 +26,16 @@
     font-size: 17px;
 }
 
+.default-button--bordered {
+    border-color: var(--theme__color1);
+    background: transparent;
+    color: var(--theme__color1);
+}
+.default-button--bordered:hover {
+    background: var(--theme__color1);
+    color: #fff;
+}
+
 .default-button--bordered-white {
     border-color: #fff;
     color: #fff;
